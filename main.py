@@ -10,6 +10,6 @@ contents = """
 This is the content of the emai
 """
 
-yag = yagmail.SMTP(user=sender, password=os.getenv('PASSWORD'))
+yag = yagmail.SMTP(user=sender, password=os.getenv('key'))
 yag.send(to=reciever, subject=subject, contents=contents)
 print('Email Successfully sent!')
